@@ -1,0 +1,352 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 61B7202A
+P 6550 2200
+F 0 "R3" H 6620 2246 50  0000 L CNN
+F 1 "3k6" H 6620 2155 50  0000 L CNN
+F 2 "" V 6480 2200 50  0001 C CNN
+F 3 "~" H 6550 2200 50  0001 C CNN
+	1    6550 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 61B728B9
+P 6000 2950
+F 0 "C4" V 5748 2950 50  0000 C CNN
+F 1 "1u" V 5839 2950 50  0000 C CNN
+F 2 "" H 6038 2800 50  0001 C CNN
+F 3 "~" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61B7395A
+P 5400 2450
+F 0 "R4" V 5193 2450 50  0000 C CNN
+F 1 "100k" V 5284 2450 50  0000 C CNN
+F 2 "" V 5330 2450 50  0001 C CNN
+F 3 "~" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 61B7494F
+P 4800 2950
+F 0 "Q?" H 4991 2996 50  0000 L CNN
+F 1 "BC546" H 4991 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 2875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4800 2950 50  0001 L CNN
+	1    4800 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2350 6550 2950
+Wire Wire Line
+	6550 2950 6150 2950
+Wire Wire Line
+	5850 2950 5550 2950
+Wire Wire Line
+	5550 2450 5550 2950
+Connection ~ 5550 2950
+Wire Wire Line
+	5550 2950 5000 2950
+Wire Wire Line
+	4350 2150 4350 2450
+Wire Wire Line
+	4350 2750 4700 2750
+Wire Wire Line
+	5250 2450 4350 2450
+Connection ~ 4350 2450
+Wire Wire Line
+	4350 2450 4350 2750
+$Comp
+L Device:C C3
+U 1 1 61B7676E
+P 3900 2450
+F 0 "C3" V 3648 2450 50  0000 C CNN
+F 1 "10u" V 3739 2450 50  0000 C CNN
+F 2 "" H 3938 2300 50  0001 C CNN
+F 3 "~" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 2450 4050 2450
+Wire Wire Line
+	4700 3150 4700 3400
+$Comp
+L pspice:0 #GND?
+U 1 1 61B77C04
+P 4700 3400
+F 0 "#GND?" H 4700 3300 50  0001 C CNN
+F 1 "0" H 4700 3489 50  0000 C CNN
+F 2 "" H 4700 3400 50  0001 C CNN
+F 3 "~" H 4700 3400 50  0001 C CNN
+	1    4700 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61B7BAD0
+P 6550 2050
+F 0 "#PWR?" H 6550 1900 50  0001 C CNN
+F 1 "+5V" H 6565 2223 50  0000 C CNN
+F 2 "" H 6550 2050 50  0001 C CNN
+F 3 "" H 6550 2050 50  0001 C CNN
+	1    6550 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Microphone_Condenser MK?
+U 1 1 61B7BF1E
+P 6550 3250
+F 0 "MK?" H 6680 3296 50  0000 L CNN
+F 1 "Microphone_Condenser" H 6680 3205 50  0000 L CNN
+F 2 "" V 6550 3350 50  0001 C CNN
+F 3 "~" V 6550 3350 50  0001 C CNN
+	1    6550 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3450 6550 3700
+$Comp
+L pspice:0 #GND?
+U 1 1 61B7DC9E
+P 6550 3700
+F 0 "#GND?" H 6550 3600 50  0001 C CNN
+F 1 "0" H 6550 3789 50  0000 C CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "~" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3050 6550 2950
+Connection ~ 6550 2950
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13-20PU U?
+U 1 1 61B7E7CD
+P 2000 2550
+F 0 "U?" H 1471 2596 50  0000 R CNN
+F 1 "ATtiny13-20PU" H 1471 2505 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2000 2550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf" H 2000 2550 50  0001 C CNN
+	1    2000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2450 3500 2450
+Wire Wire Line
+	3500 2450 3500 2250
+Wire Wire Line
+	3500 2250 2600 2250
+$Comp
+L Device:R_POT RV?
+U 1 1 61BCF7EC
+P 3650 2800
+F 0 "RV?" H 3580 2754 50  0000 R CNN
+F 1 "R_POT" H 3580 2845 50  0000 R CNN
+F 2 "" H 3650 2800 50  0001 C CNN
+F 3 "~" H 3650 2800 50  0001 C CNN
+	1    3650 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2800 3300 2800
+Wire Wire Line
+	3300 2800 3300 2350
+Wire Wire Line
+	3300 2350 2600 2350
+Wire Wire Line
+	4350 1850 4350 1800
+$Comp
+L power:+5V #PWR?
+U 1 1 61B78082
+P 4350 1800
+F 0 "#PWR?" H 4350 1650 50  0001 C CNN
+F 1 "+5V" H 4365 1973 50  0000 C CNN
+F 2 "" H 4350 1800 50  0001 C CNN
+F 3 "" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61B75B8A
+P 4350 2000
+F 0 "R2" H 4420 2046 50  0000 L CNN
+F 1 "10k" H 4420 1955 50  0000 L CNN
+F 2 "" V 4280 2000 50  0001 C CNN
+F 3 "~" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61BD2D1B
+P 3650 1750
+F 0 "#PWR?" H 3650 1600 50  0001 C CNN
+F 1 "+5V" H 3665 1923 50  0000 C CNN
+F 2 "" H 3650 1750 50  0001 C CNN
+F 3 "" H 3650 1750 50  0001 C CNN
+	1    3650 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1750 3650 2650
+$Comp
+L pspice:0 #GND?
+U 1 1 61BD3864
+P 3650 3350
+F 0 "#GND?" H 3650 3250 50  0001 C CNN
+F 1 "0" H 3650 3439 50  0000 C CNN
+F 2 "" H 3650 3350 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2950 3650 3350
+$Comp
+L pspice:0 #GND?
+U 1 1 61BD4B6C
+P 2000 3550
+F 0 "#GND?" H 2000 3450 50  0001 C CNN
+F 1 "0" H 2000 3639 50  0000 C CNN
+F 2 "" H 2000 3550 50  0001 C CNN
+F 3 "~" H 2000 3550 50  0001 C CNN
+	1    2000 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3150 2000 3550
+$Comp
+L Device:C C?
+U 1 1 61BD82DD
+P 1850 1700
+F 0 "C?" V 1598 1700 50  0000 C CNN
+F 1 "C" V 1689 1700 50  0000 C CNN
+F 2 "" H 1888 1550 50  0001 C CNN
+F 3 "~" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1700 2000 1950
+$Comp
+L pspice:0 #GND?
+U 1 1 61BD8F2C
+P 1700 1850
+F 0 "#GND?" H 1700 1750 50  0001 C CNN
+F 1 "0" H 1700 1939 50  0000 C CNN
+F 2 "" H 1700 1850 50  0001 C CNN
+F 3 "~" H 1700 1850 50  0001 C CNN
+	1    1700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1700 1700 1850
+$Comp
+L power:+5V #PWR?
+U 1 1 61BD9DF9
+P 2000 1450
+F 0 "#PWR?" H 2000 1300 50  0001 C CNN
+F 1 "+5V" H 2015 1623 50  0000 C CNN
+F 2 "" H 2000 1450 50  0001 C CNN
+F 3 "" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1450 2000 1700
+Connection ~ 2000 1700
+$Comp
+L Device:R R1
+U 1 1 61BDA889
+P 3150 1400
+F 0 "R1" H 3220 1446 50  0000 L CNN
+F 1 "150" H 3220 1355 50  0000 L CNN
+F 2 "" V 3080 1400 50  0001 C CNN
+F 3 "~" H 3150 1400 50  0001 C CNN
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61BDB740
+P 3150 1100
+F 0 "#PWR?" H 3150 950 50  0001 C CNN
+F 1 "+5V" H 3165 1273 50  0000 C CNN
+F 2 "" H 3150 1100 50  0001 C CNN
+F 3 "" H 3150 1100 50  0001 C CNN
+	1    3150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1100 3150 1250
+$Comp
+L Device:LED D?
+U 1 1 61BDC1B8
+P 3150 1800
+F 0 "D?" V 3189 1682 50  0000 R CNN
+F 1 "LED" V 3098 1682 50  0000 R CNN
+F 2 "" H 3150 1800 50  0001 C CNN
+F 3 "~" H 3150 1800 50  0001 C CNN
+	1    3150 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 1550 3150 1650
+Wire Wire Line
+	3150 1950 3150 2650
+Wire Wire Line
+	3150 2650 2600 2650
+$Comp
+L Device:R R?
+U 1 1 61BDFEDC
+P 3250 4350
+F 0 "R?" V 3043 4350 50  0000 C CNN
+F 1 "R" V 3134 4350 50  0000 C CNN
+F 2 "" V 3180 4350 50  0001 C CNN
+F 3 "~" H 3250 4350 50  0001 C CNN
+	1    3250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 61BE062D
+P 3700 4350
+F 0 "Q?" H 3891 4396 50  0000 L CNN
+F 1 "BC546" H 3891 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3900 4275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3700 4350 50  0001 L CNN
+	1    3700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4350 3400 4350
+Wire Wire Line
+	3100 4350 2900 4350
+Wire Wire Line
+	2900 4350 2900 2550
+Wire Wire Line
+	2900 2550 2600 2550
+$EndSCHEMATC
