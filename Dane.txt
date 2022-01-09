@@ -1,0 +1,7 @@
+Skład grupy: Marcin Makucki, Rafał Maciak, Piotr Kuczkowski
+Termin zajęć: Poniedziałek 10:15
+
+Tytuł projektu: Clap
+
+Do naprawienia:
+-mikrofon
