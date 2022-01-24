@@ -1,9 +1,10 @@
-Skład grupy: Marcin Makucki, Rafał Maciak, Piotr Kuczkowski
+Skład grupy: 
+Marcin Makucki 228428
+Rafał Maciak 228427
+Piotr Kuczkowski 228421
 Termin zajęć: Poniedziałek 10:15
+Samoocena:
 
 Tytuł projektu: Clap
-
-Do naprawienia:
--mikrofon
 
 Nie mamy zmontowanego układu oraz pomiarów na oscyloskopie
