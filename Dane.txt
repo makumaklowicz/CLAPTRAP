@@ -5,3 +5,5 @@ Tytuł projektu: Clap
 
 Do naprawienia:
 -mikrofon
+
+Nie mamy zmontowanego układu oraz pomiarów na oscyloskopie
