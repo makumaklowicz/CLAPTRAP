@@ -4,7 +4,7 @@ Rafał Maciak 228427
 Piotr Kuczkowski 228421
 Termin zajęć: Poniedziałek 10:15
 Samoocena: Wykonaliśmy model płytki w KiCad oraz niezbędne symulacje, raport cyklu życia, zlutowaliśmy układ oraz wykonaliśmy pomiary. Układ nie działa, ponieważ mikrokontroler ATtiny13 nie został zaprogramowany. 
-Jeżeli wyniki pomiarów wykażą sprawność wszystkich gałęzi to proponowana przez nas ocena => 4
+Proponowana przez nas ocena => 4
 
 Tytuł projektu: Clap
 
